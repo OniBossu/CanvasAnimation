@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<canvas id = "canvas"></canvas>
+
+	<script src="code/code.js"></script>
+
+	<link rel="stylesheet" href="css/CSS.css">
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+		var canvas = document.getElementById('myCanvas');
+		var context = canvas.getContext('2d');
+
+		context.beginPath();
+		context.moveTo(300,50);
+		context.lineTo(200,50);
+		context.lineTo(250,15);
+		context.fill();
+
+		context.closePath();
+		context.lineWidth = 5;
+		context.strokeStyle = 'red';
+		context.stroke();
+	  
+		var canvas = document.getElementById("myCanvas");
+		var context = canvas.getContext("2d");
+		
+		context.beginPath();
+		context.arc(100, 75, 50, 0, 2 * Math.PI);
+		context.stroke();
+		
+		
+	  	var canvas = document.getElementById("myCanvas");
+		var context = canvas.getContext("2d");
+		
+		context.beginPath();
+		context.arc(400, 75, 50, 0, 2 * Math.PI);
+		context.stroke();
+    </script>
+</body>
+</html>
